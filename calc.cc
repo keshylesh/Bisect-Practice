@@ -11,11 +11,14 @@ enum choice {
 int main() {
     int a,b;
 
+    printf("Pick your first number: ");
     scanf("%d", &a);
+    printf("Pick your second number: ");
     scanf("%d", &b);
 
     enum choice c = no_choice;
     while (c == no_choice) {
+        printf("Pick an option:");
         printf("1: add\n2: multiply\n");
         scanf("%d", (int *) &c);
 
