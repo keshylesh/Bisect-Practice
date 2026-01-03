@@ -2,7 +2,7 @@
 
 /* Program to add and multiply two numbers...but does it work? */
 
-/* I told you not to brute force it >:( */
+/* If you're seeing this and trying to brute force find the commit, trust me it's easier to git bisect! */
 enum choice {
     no_choice,
     add,
