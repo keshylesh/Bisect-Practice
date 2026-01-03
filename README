@@ -1,0 +1,15 @@
+This is a practice repository for practicing git bisect. 
+
+git bisect is a very useful tool that allows you to use binary search to search
+through commits. This helps in figuring out where an error popped up, and might
+be useful through this course and in the future!
+
+To get started, look up git bisect, you will mainly be using these commands:
+- git bisect start
+- git bisect good
+- git bisect bad
+
+When you have figured out the first commit to have this error, pick that commit
+hash in the Google Form. 
+
+Good luck!
