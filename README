@@ -12,4 +12,14 @@ To get started, look up git bisect, you will mainly be using these commands:
 When you have figured out the first commit to have this error, pick that commit
 hash in the Google Form. 
 
+*Hint*: the very first commit had working addition code. 
+Here's the hash for it: f07c33cf803e53ddb66a26b451e305e778319c9e. 
+git is really smart at filling in details, so you just need the first few
+characters of a hash to reference it! In this case, just f07c is enough.
+
+There are commits prior to adding the Makefile! This is not an error, and
+is intended, think about what you need to do here.
+
+At no point during this exercise will you need to add files to the directory.
+
 Good luck!
