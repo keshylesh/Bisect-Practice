@@ -1,26 +1,41 @@
+* Info *
 This is a practice repository for practicing git bisect. 
 
 git bisect is a very useful tool that allows you to use binary search to search
 through commits. This helps in figuring out where an error popped up, and might
 be useful through this course and in the future!
 
-To get started, look up git bisect.
+* The Problem *
+The code in this repository contains a file called calc.cc, which runs a simple
+calculator program. It takes two numbers and calculates either their sum or the 
+product.
+
+This sounds like a simple program! Let's try it out:
+- First run make, we now have an executable called 'calc'
+- Let's run it and pick 3 and 4
+- Try multiplying them with the program. This seems alright!
+- Now run it again and try adding them...oh! That seems to be the product and not the sum :(
+
+We're going to sleuth around and figure out where exactly this error occurred.
+To get started, let's look up git bisect and try using it.
+
+* Hint *
+The very first commit had working addition code. Here's the hash for it: f07c33cf803e53ddb66a26b451e305e778319c9e. 
+It looks long, but git is really smart at filling in details, so we can just 
+use the first few characters of a hash to reference it! In this case, just 'f07c' is enough.
+
+For the bad commit, we know that our latest commit is not working, what marker can we use for it?
 
 When you have figured out the first commit to have this error, pick that commit
 hash in the Google Form. 
 
-*Hint*: the very first commit had working addition code. 
-Here's the hash for it: f07c33cf803e53ddb66a26b451e305e778319c9e. 
-git is really smart at filling in details, so you just need the first few
-characters of a hash to reference it! In this case, just f07c is enough.
-For the bad commit, we know that our latest commit is not working.
-
+* Additional info *
 There are commits prior to adding the Makefile! This is not an error, and
-is intended, think about what you need to do here.
+is intended, think about what you need to do here to get the executable.
 
 At no point during this exercise will you need to add files to the directory.
 
-If you would like to stop your bisect you can run git bisect reset, and start
+If you would like to stop your bisect you can run 'git bisect reset', and start
 over.
 
 Good luck!
