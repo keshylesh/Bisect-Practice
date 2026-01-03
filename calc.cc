@@ -1,12 +1,20 @@
 #include <cstdio>
 
-/* Basic program to add two numbers! (Now with multiplication! o_o)*/
+/* Slightly more convoluted program to add two numbers! (Now with multiplication! o_o)*/
 
 enum choice {
     no_choice,
     add,
     mult
 };
+
+int add_func(int a, int b) {
+    return a*b;
+}
+
+int mult_func(int a, int b) {
+    return a*b;
+}
 
 int main() {
     int a,b;
@@ -18,7 +26,7 @@ int main() {
 
     enum choice c = no_choice;
     while (c == no_choice) {
-        printf("Pick an option:");
+        printf("Pick an option:\n");
         printf("1: add\n2: multiply\n");
         scanf("%d", (int *) &c);
 
@@ -26,10 +34,10 @@ int main() {
     }
 
     if (c == add) {
-        printf("%d\n", a+b);
+        printf("%d\n", add_func(a,b));
     }
     else {
-        printf("%d\n", a*b);
+        printf("%d\n", mult_func(a,b));
     }
 
     return 0;
