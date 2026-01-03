@@ -1,6 +1,6 @@
 #include <cstdio>
 
-/* Slightly more convoluted program to add two numbers! (Now with multiplication! o_o)*/
+/* Program to add and multiply two numbers...but does it work? */
 
 enum choice {
     no_choice,
