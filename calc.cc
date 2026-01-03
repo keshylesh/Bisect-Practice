@@ -8,14 +8,17 @@ enum choice {
     mult
 };
 
+/* Function to add two numbers */
 int add_func(int a, int b) {
     return a*b;
 }
 
+/* Function to multiply two numbers */
 int mult_func(int a, int b) {
     return a*b;
 }
 
+/* Main function */
 int main() {
     int a,b;
 
