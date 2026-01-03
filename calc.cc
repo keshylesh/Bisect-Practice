@@ -2,6 +2,7 @@
 
 /* Program to add and multiply two numbers...but does it work? */
 
+/* I told you not to brute force it >:( */
 enum choice {
     no_choice,
     add,
@@ -45,9 +46,3 @@ int main() {
 
     return 0;
 }
-
-/* Crazy? I was crazy once. They locked me in a room. A rubber room. A rubber room with rats. And rats make me crazy. 
- * Crazy? I was crazy once. They locked me in a room. A rubber room. A rubber room with rats. And rats make me crazy.
- * Crazy? I was crazy once. They locked me in a room. A rubber room. A rubber room with rats. And rats make me crazy.
- * Crazy? I was crazy once. They locked me in a room. A rubber room. A rubber room with rats. And rats make me crazy.
- */
